@@ -1,1 +1,1 @@
-include ':template', ':lecture1', ':exercise1', ':mylecture1', ':mylecture2', ':myexercise1', ':lecture2', 'myexercise2'
+include ':template', ':lecture1', ':exercise1', ':mylecture1', ':mylecture2', ':myexercise1', ':lecture2', 'myexercise2', 'exercise2'
