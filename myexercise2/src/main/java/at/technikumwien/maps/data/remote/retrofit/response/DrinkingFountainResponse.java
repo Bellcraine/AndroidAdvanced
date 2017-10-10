@@ -30,15 +30,15 @@ public class DrinkingFountainResponse {
 
 
     public List<DrinkingFountain> getDrinkingFountainList() {
-
         List<DrinkingFountain> drinkingFountainList = new ArrayList<>(features.size());
+
         for(DrinkingFountainItem i : features) {
             try{
                 drinkingFountainList.add(DrinkingFountain.create(i.id, i.properties.NAME, i.geometry.coordinates[1], i.geometry.coordinates[0]));
             } catch (Exception e) {
-                Log.e("DrinkingFountainResp", "Could not create drinking fountain from response", e);
+                Log.e("DrinkingFountainResp", "Error: Could not create drinking fountain from response", e);
             }
         }
-        return getDrinkingFountainList();
+        return drinkingFountainList;
     }
 }

@@ -16,9 +16,11 @@ public class RetrofitDrinkingFountainRepo implements DrinkingFountainRepo {
 
     private final DrinkingFountainApi drinkingFountainApi;
 
+
     public RetrofitDrinkingFountainRepo(AppDependencyManager manager) {
         this.drinkingFountainApi = manager.getDrinkingFountainApi();
     }
+
 
     @Override
     public void loadDrinkingFountains(final OnDataLoadedCallback<List<DrinkingFountain>> callback) {

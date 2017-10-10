@@ -10,5 +10,4 @@ public interface DrinkingFountainApi {
 
     @GET(DrinkingFountainRepo.GET_DRINKING_FOUNTAINS_PATH)
     Call<DrinkingFountainResponse> getDrinkingFountains();
-
 }
