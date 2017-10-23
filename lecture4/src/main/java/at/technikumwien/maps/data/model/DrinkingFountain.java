@@ -6,8 +6,12 @@ import android.support.annotation.NonNull;
 
 import com.google.android.gms.maps.model.LatLng;
 
-@Entity(tableName = "drinking_fountain")
+import static at.technikumwien.maps.data.model.DrinkingFountain.TABLE_NAME;
+
+@Entity(tableName = TABLE_NAME)
 public class DrinkingFountain {
+
+    public static final String TABLE_NAME = "drinking_fountains";
 
     @PrimaryKey @NonNull
     private String id;
@@ -16,8 +20,7 @@ public class DrinkingFountain {
     private double lat;
     private double lng;
 
-    public DrinkingFountain() {
-    }
+    public DrinkingFountain() { }
 
     public DrinkingFountain(@NonNull String id, @NonNull String name, double lat, double lng) {
         this.id = id;

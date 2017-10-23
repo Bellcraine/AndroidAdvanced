@@ -1,8 +1,6 @@
 package at.technikumwien.maps;
 
-import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Room;
-import android.arch.persistence.room.migration.Migration;
 import android.content.Context;
 import android.content.res.Resources;
 
@@ -76,10 +74,8 @@ public class AppDependencyManager {
     }
 
     public AppDatabase getAppDatabase() {
-        if(appDatabase == null) {
-            appDatabase = Room.databaseBuilder(appContext, AppDatabase.class, "mapsdb")
-                    .build();
-        }
+        if(appDatabase == null) { appDatabase = Room.databaseBuilder(appContext, AppDatabase.class, "mapsdb").build(); }
         return appDatabase;
     }
+
 }
