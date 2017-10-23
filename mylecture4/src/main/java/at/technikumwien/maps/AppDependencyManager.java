@@ -77,4 +77,5 @@ public class AppDependencyManager {
         if(appDatabase == null) { appDatabase = Room.databaseBuilder(appContext, AppDatabase.class, "mapsdb").build(); }
         return appDatabase;
     }
+
 }
