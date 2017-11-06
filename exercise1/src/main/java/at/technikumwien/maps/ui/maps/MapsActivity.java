@@ -22,7 +22,6 @@ import at.technikumwien.maps.ui.base.BaseActivity;
 public class MapsActivity extends BaseActivity<MapsView, MapsPresenter> implements OnMapReadyCallback, MapsView {
 
     private GoogleMap googleMap;
-
     private FrameLayout rootLayout;
 
     @NonNull

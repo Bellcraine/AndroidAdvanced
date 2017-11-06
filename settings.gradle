@@ -1,3 +1,4 @@
 include ':template', ':lecture1', ':lecture2', ':lecture3', ':lecture4', ':exercise1', ':exercise2',
         ':exercise3', ':exercise4', ':mylecture1', ':mylecture2', ':mylecture3', ':mylecture4',
-        ':myexercise1', ':myexercise2', ':myexercise3', ':myexercise4'
+        ':myexercise1', ':myexercise2', ':myexercise3', ':myexercise4',
+        ':training1', ':training2', ':training3', ':training4'
